@@ -17,7 +17,9 @@ This project was developed to assist in converting sign language symbols into Si
 
 ## Dataset
 
-The dataset contains 26 sign symbols, each with 15 samples. The symbols are captured in video format, where each symbol is represented by a sequence of frames.
+The dataset contains 26 sign symbols, each with 15 samples. The symbols are captured in video format, where a sequence of frames represents each symbol.
+
+'ආසන්න වෙලා', 'ඉක්මනින්', 'ඉබ්බා', 'ඉලක්කයට', 'ඒ නිසා', 'ඔබ', 'කපුටාට', 'කපුටෙක්', 'කෑමක්', 'කියලා', 'කේජු කෑල්ලක්', 'දවසක්', 'දිනුවා', 'පරක්කු උණා', 'බඩගින්නෙන්', 'යන බව', 'යනවා', 'සිටියා', 'සිනහ උණා', 'සෙමෙන්', 'සෙව්වා', 'හම්බුනා', 'හාවා', 'හාවාට', 'හාවෙක්', 'හිතනවට වඩා'
 
 ### A few samples from the dataset
 
