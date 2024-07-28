@@ -1,27 +1,52 @@
-# Sign Language to Sinhala Text Conversion
+# Sign Language to Sinhala Text Converter
+
+This project aims to convert sign language symbols into Sinhala text. It uses a sequence of frames (video) for each sign language symbol. 
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Dataset](#dataset)
+- [Data Collection](#data-collection)
+- [Model and Training](#model-and-training)
+- [Results](#results)
+
 
 ## Overview
 
-This project aims to convert sign language symbols into Sinhala text. Each sign language symbol is represented as a sequence of frames in a video. The dataset consists of 26 sign symbols, each with 15 samples.
+This project was developed to assist in converting sign language symbols into Sinhala text, providing a valuable tool for communication and translation. The system uses video sequences to identify and classify sign language symbols.
 
-## samples from collected dataset
+## Dataset
+
+The dataset contains 26 sign symbols, each with 15 samples. The symbols are captured in video format, where each symbol is represented by a sequence of frames.
+
+### A few samples from the dataset
 
 https://github.com/user-attachments/assets/216cd975-80d4-4f7d-8a2a-09858f91091a
 
-https://github.com/user-attachments/assets/dc975fcb-cc56-4e19-9f3a-e49a01d428ba
-
 https://github.com/user-attachments/assets/858b0bfd-d23b-432c-a757-ddf6e58fe70f
 
+dataset password hint is "my guitar brand name & model"
 
-## Project Structure
+## Data Collection
 
-- **data_collecting.py**: This script is used for collecting the data.
-- **MediaPipe library**: Utilized for processing the video frames.
-- **LSTM model**: Employed to identify the sign language symbols.
+The `data_collecting.py` script captures actions and processes video frames for each sign symbol using OpenCV and MediaPipe. 
+It saves the captured frames and their corresponding keypoints for training. The script supports real-time video capture, guiding the user through the data collection process by displaying prompts and countdowns on the screen.
 
-## Model Performance
+
+## Model and Training
+
+A Long Short-Term Memory (LSTM) model was used to identify and classify the sign language symbols. The LSTM model is well-suited for this task because it handles sequential data and captures temporal dependencies.
+
+## Results
 
 The model achieved an accuracy of 90%. Below are the classification report and confusion matrix:
 
 ### Classification Report
+
+![Classification Report](https://github.com/user-attachments/assets/062246f4-079a-49da-813c-1d690ff8262e)
+
+### Confusion Matrix
+
+![Confusion Matrix](https://github.com/user-attachments/assets/6e394817-8346-46ef-8c03-f80221be0515)
+
 
